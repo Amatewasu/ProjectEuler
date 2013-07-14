@@ -9,12 +9,8 @@ console.time("algo");
 
 var sum = 0;
 
-var a = b = 0;
 for (var i = 999; i; i--){
-	a = i / 3;
-	b = i / 5;
-
-	if (parseInt(a, 10) === a || parseInt(b, 10) === b){
+	if (i % 5 === 0 || i % 3 === 0){
 		sum += i;
 	}
 }

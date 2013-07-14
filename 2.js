@@ -9,16 +9,14 @@
 console.time("algo");
 
 var sum = 0;
-var a = b = c = d = 1;
+var a = b = c = 1;
 
 while (c < 4000000){ // c is lower than four million
 	c = a + b;
 	a = b;
 	b = c;
 
-	d = c / 2;
-
-	if (parseInt(d, 10) === d){
+	if (c % 2 === 0){
 		sum += c;
 	}
 }

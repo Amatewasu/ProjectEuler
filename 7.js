@@ -26,20 +26,17 @@ while (again){
 
 
 function isPrime (x){
-	var a = x / 2;
-	if (parseInt(a, 10) == a){
+	if (x % 2 === 0){
 		return false;
 	}
 
 	var max = Math.sqrt(x);
 	for (var i = 2; i <= max; i++){
-		a = i / 2;
-		if (parseInt(a, 10) == a){
+		if (i % 2 === 0){
 			continue;
 		}
 
-		a = x / i;
-		if (parseInt(a, 10) == a){
+		if (x % i === 0){
 			return false;
 		}
 	}
