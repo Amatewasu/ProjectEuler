@@ -11,7 +11,7 @@ var max = 0;
 var a = 0;
 var b = "";
 var c = [];
-var len = halfLen = 0;
+var halfLen = 0;
 
 for (var i = 0; i < 1000; i++){
 	for (var j = 0; j < 1000; j++){
