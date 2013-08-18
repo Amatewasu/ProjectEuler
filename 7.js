@@ -26,6 +26,14 @@ while (again){
 
 
 function isPrime (x){
+	if (x === 1){
+		return false;
+	}
+
+	if (x < 4){ // 2 & 3 are prime
+		return true;
+	}
+
 	if (x % 2 === 0){
 		return false;
 	}
